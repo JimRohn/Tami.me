@@ -1,0 +1,69 @@
+[
+    {
+      "initials": "JD",
+      "name": "John Doe",
+      "role": "Maintainer",
+      "status": "active"
+    },
+    {
+      "initials": "JS",
+      "name": "Jane Smith",
+      "role": "Editor",
+      "status": "inactive"
+    },
+    {
+        "initials": "JS",
+        "name": "Jane Smith",
+        "role": "Editor",
+        "status": "inactive"
+      },
+      
+      {
+        "initials": "JS",
+        "name": "Jane Smith",
+        "role": "Editor",
+        "status": "inactive"
+      },
+      
+      {
+        "initials": "JS",
+        "name": "Jane Smith",
+        "role": "Editor",
+        "status": "inactive"
+      },
+      
+      {
+        "initials": "JS",
+        "name": "Jane Smith",
+        "role": "Editor",
+        "status": "inactive"
+      },
+      
+      {
+        "initials": "JS",
+        "name": "Jane Smith",
+        "role": "Editor",
+        "status": "inactive"
+      },
+      
+      {
+        "initials": "JS",
+        "name": "Jane Smith",
+        "role": "Editor",
+        "status": "inactive"
+      },
+      
+      {
+        "initials": "JS",
+        "name": "Jane Smith",
+        "role": "Editor",
+        "status": "inactive"
+      },
+      
+      {
+        "initials": "JS",
+        "name": "Jane Smith",
+        "role": "Editor",
+        "status": "inactive"
+      }
+    ]

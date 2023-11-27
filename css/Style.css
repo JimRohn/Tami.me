@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #333;
+  padding: 20px;
+}
+
+.navbar button {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background: none;
+  border: none;
+  text-align: left;
+}
+
+.search-container {
+  margin-left: 220px; /* Adjust based on navbar width */
+  padding: 20px;
+}
+
+.search-container input[type="text"] {
+  width: 50%; /* Adjust as needed */
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 17px;
+  border: 1px solid #ddd;
+}
+/* Add this to your existing style.css file */
+
+.container {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+.person-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.person-image img {
+  width: 60px; /* Adjust as needed */
+  height: 60px; /* Adjust as needed */
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.person-info h2 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.person-info p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+.status {
+  padding: 3px 6px;
+  border-radius: 4px;
+  color: white;
+}
+
+.status.active {
+  background-color: #28a745;
+}
+
+.status.inactive {
+  background-color: #dc3545;
+}
+
+.status.pending {
+  background-color: #ffc107;
+}
+/* Style for the main content area */
+.main-content {
+  margin-left: 220px; /* Same as the navbar width */
+  padding: 20px;
+  background: #f2f2f2; /* Light grey background */
+  min-height: 100vh; /* Full height */
+}
+
+.person-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.person-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 300px;
+  text-align: left;
+}
+
+.person-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.person-info {
+  padding: 15px;
+}
+
+.person-info h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.person-info p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.status {
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 12px;
+  padding: 2px 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Additional styles for buttons in the navbar */
+.navbar button.active {
+  background-color: #5b5ea6; /* Active button color */
+  color: white;
+}
