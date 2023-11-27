@@ -1,0 +1,123 @@
+/* Reset any margins and paddings to ensure consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the navbar */
+/* Style for the vertical navbar */
+.navbar {
+    background-color: #333;
+    position: fixed; /* Fixed position to the side of the screen */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left side */
+    width: 200px; /* Width of the navbar */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scrolling if the content is too long */
+}
+
+/* Style for the navbar buttons */
+.navbar button {
+    display: block; /* Stack buttons vertically */
+    background-color: #333;
+    color: white;
+    padding: 16px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    border: none;
+    border-bottom: 1px solid #555; /* Add a separator between buttons */
+    width: 100%; /* Full width */
+    text-align: left; /* Align text to the left */
+}
+
+/* Change background color on hover */
+.navbar button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Main content should have a left margin equal to the navbar width */
+.main-content {
+    margin-left: 200px; /* Same as navbar width */
+    padding: 20px;
+}
+
+/* Continue with your existing person row and person card styles */
+
+
+/* Style for the main content area */
+
+
+/* Style for the list of people */
+#peopleList {
+    display: block; /* Ensures the list is visible */
+}
+
+.person-row {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.person-row img {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.person-row span {
+    font-size: 18px; /* Adjust size as needed */
+}
+
+/* Style for the person card */
+.person-card {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 500px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 20px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Add some space between header and body */
+}
+
+.card-header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.card-header h2 {
+    flex-grow: 1; /* Allows the title to grow and the close button to align to the right */
+    padding-left: 20px; /* Adds some space between the image and the title */
+}
+
+.card-body p {
+    font-size: 16px; /* Adjust size as needed */
+    line-height: 1.5; /* Adjust line height as needed */
+    color: #333; /* Dark grey color for text */
+}
+
+.card-header button {
+    padding: 5px 10px;
+    background-color: #f44336; /* Red color for close button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

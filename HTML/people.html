@@ -1,220 +1,50 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>People | Tami Law Firm</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/people.css">
 </head>
 <body>
-    <div id="navbar" class="navbar">
-        <button onclick="location.href='../index.html'">Home</button>
-        <button onclick="location.href='people.html'" class="active">People</button>
-        <button onclick="location.href='matters.html'">Matters</button>
-        <button onclick="location.href='events.html'">Events</button>
-        <button onclick="location.href='learning.html'">Learning</button>
+    
+        <div id="navbar" class="navbar">
+            <button onclick="location.href='../index.html'">Home</button>
+            <button onclick="location.href='people.html'" class="active">People</button>
+            <button onclick="location.href='matters.html'">Matters</button>
+            <button onclick="location.href='events.html'">Events</button>
+            <button onclick="location.href='learning.html'">Learning</button>
     </div>
 
     <div class="main-content">
-        <div class="search-bar">
-            <select id="locationFilter">
-                <option value="">Select Location</option>
-                <option value="London">London</option>
-                <option value="New York">New York</option>
-                <!-- Add other locations as options here -->
-            </select>
-
-            <select id="expertiseFilter">
-                <option value="">Select Expertise</option>
-                <option value="Corporate Law">Corporate Law</option>
-                <option value="Criminal Law">Criminal Law</option>
-                <!-- Add other expertise fields as options here -->
-            </select>
-
-            <button onclick="filterPeople()">Filter</button>
+        <div id="peopleList">
+            <div class="person-row" onclick="showPersonCard('person1')">
+                <img src="../images/avatars/10.png" alt="Zsazsa McCleverty">
+                <span>Zsazsa McCleverty - Senior Developer</span>
+            </div>
         </div>
+     
 
-        <div class="person-list" id="personList">
-            <!-- Example person cards -->
-            <div class="person-card" data-location="London" data-expertise="Corporate Law">
-                <div class="person-image">
-                    <img src="../images/avatars/10.png" alt="Person's Name">
-                </div>
-                <div class="person-info">
-                    <h2>User: Amira Kazemi</h2>
-                    <p>Role: Senior Partner</p>
-                   <p>Specialization: Corporate Law</p>
-                    <p>Current Load: 12</p>
-                    <p>Status: Available</p>
-                    <p>Location: Dubai, UAE</p>
-                    <div class="person-actions">
-                        <a href="profile_url">Profile</a>
-                        <a href="message_url">Message</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="person-card" data-location="London" data-expertise="Corporate Law">
-                <div class="person-image">
+            <div id="personCard" class="person-card" style="display: none;">
+                <div class="card-header">
                     <img src="../images/avatars/10.png" alt="Amira Kazemi">
+                    <h2>Amira Kazemi</h2>
+                    <button onclick="hidePersonCard()">Close</button>
                 </div>
-                <div class="person-info">
-                    <h2>User: Amira Kazemi</h2>
-                    <p>Role: Senior Partner</p>
-                    <p>Specialization: Corporate Law</p>
-                    <p>Current Load: 12</p>
-                    <p>Status: Available</p>
-                    <p>Location: Dubai, UAE</p>
-                    <div class="person-actions">
-                        <a href="profile_url">Profile</a>
-                        <a href="message_url">Message</a>
-                    </div>
+                <div class="card-body">
+                    <p><strong>Role:</strong> Senior Partner</p>
+                    <p><strong>Specialization:</strong> Corporate Law</p>
+                    <p><strong>Current Load:</strong> 12</p>
+                    <p><strong>Status:</strong> Available</p>
+                    <p><strong>Location:</strong> Dubai, UAE</p>
                 </div>
             </div>
-            <div class="person-card" data-location="London" data-expertise="Corporate Law">
-                <div class="person-image">
-                    <img src="../images/avatars/10.png" alt="Amira Kazemi">
-                </div>
-                <div class="person-info">
-                    <h2>User: Amira Kazemi</h2>
-                    <p>Role: Senior Partner</p>
-                    <p>Specialization: Corporate Law</p>
-                    <p>Current Load: 12</p>
-                    <p>Status: Available</p>
-                    <p>Location: Dubai, UAE</p>
-                    <div class="person-actions">
-                        <a href="profile_url">Profile</a>
-                        <a href="message_url">Message</a>
-                    </div>
-                </div>
-            </div>
-            <div class="person-card" data-location="London" data-expertise="Corporate Law">
-                <div class="person-image">
-                    <img src="../images/avatars/10.png" alt="Amira Kazemi">
-                </div>
-                <div class="person-info">
-                    <h2>User: Amira Kazemi</h2>
-                    <p>Role: Senior Partner</p>
-                    <p>Specialization: Corporate Law</p>
-                    <p>Current Load: 12</p>
-                    <p>Status: Available</p>
-                    <p>Location: Dubai, UAE</p>
-                    <div class="person-actions">
-                        <a href="profile_url">Profile</a>
-                        <a href="message_url">Message</a>
-                    </div>
-                </div>
-            </div>
-            <div class="person-card" data-location="London" data-expertise="Corporate Law">
-                <div class="person-image">
-                    <img src="../images/avatars/10.png" alt="Amira Kazemi">
-                </div>
-                <div class="person-info">
-                    <h2>User: Amira Kazemi</h2>
-                    <p>Role: Senior Partner</p>
-                    <p>Specialization: Corporate Law</p>
-                    <p>Current Load: 12</p>
-                    <p>Status: Available</p>
-                    <p>Location: Dubai, UAE</p>
-                    <div class="person-actions">
-                        <a href="profile_url">Profile</a>
-                        <a href="message_url">Message</a>
-                    </div>
-                </div>
-            </div>
-            <div class="person-card" data-location="London" data-expertise="Corporate Law">
-                <div class="person-image">
-                    <img src="../images/avatars/10.png" alt="Amira Kazemi">
-                </div>
-                <div class="person-info">
-                    <h2>User: Amira Kazemi</h2>
-                    <p>Role: Senior Partner</p>
-                    <p>Specialization: Corporate Law</p>
-                    <p>Current Load: 12</p>
-                    <p>Status: Available</p>
-                    <p>Location: Dubai, UAE</p>
-                    <div class="person-actions">
-                        <a href="profile_url">Profile</a>
-                        <a href="message_url">Message</a>
-                    </div>
-                </div>
-            </div>
-            <div class="person-card" data-location="London" data-expertise="Corporate Law">
-                <div class="person-image">
-                    <img src="../images/avatars/10.png" alt="Amira Kazemi">
-                </div>
-                <div class="person-info">
-                    <h2>User: Amira Kazemi</h2>
-                    <p>Role: Senior Partner</p>
-                    <p>Specialization: Corporate Law</p>
-                    <p>Current Load: 12</p>
-                    <p>Status: Available</p>
-                    <p>Location: Dubai, UAE</p>
-                    <div class="person-actions">
-                        <a href="profile_url">Profile</a>
-                        <a href="message_url">Message</a>
-                    </div>
-                </div>
-            </div>
-            <div class="person-card" data-location="London" data-expertise="Corporate Law">
-                <div class="person-image">
-                    <img src="../images/avatars/10.png" alt="Amira Kazemi">
-                </div>
-                <div class="person-info">
-                    <h2>User: Amira Kazemi</h2>
-                    <p>Role: Senior Partner</p>
-                    <p>Specialization: Corporate Law</p>
-                    <p>Current Load: 12</p>
-                    <p>Status: Available</p>
-                    <p>Location: Dubai, UAE</p>
-                    <div class="person-actions">
-                        <a href="profile_url">Profile</a>
-                        <a href="message_url">Message</a>
-                    </div>
-                </div>
-            </div>
-            <div class="person-card" data-location="London" data-expertise="Corporate Law">
-                <div class="person-image">
-                    <img src="../images/avatars/10.png" alt="Amira Kazemi">
-                </div>
-                <div class="person-info">
-                    <h2>User: Amira Kazemi</h2>
-                    <p>Role: Senior Partner</p>
-                    <p>Specialization: Corporate Law</p>
-                    <p>Current Load: 12</p>
-                    <p>Status: Available</p>
-                    <p>Location: Dubai, UAE</p>
-                    <div class="person-actions">
-                        <a href="profile_url">Profile</a>
-                        <a href="message_url">Message</a>
-                    </div>
-                </div>
-            </div>
-            <div class="person-card" data-location="London" data-expertise="Corporate Law">
-                <div class="person-image">
-                    <img src="../images/avatars/10.png" alt="Amira Kazemi">
-                </div>
-                <div class="person-info">
-                    <h2>User: Amira Kazemi</h2>
-                    <p>Role: Senior Partner</p>
-                    <p>Specialization: Corporate Law</p>
-                    <p>Current Load: 12</p>
-                    <p>Status: Available</p>
-                    <p>Location: Dubai, UAE</p>
-                    <div class="person-actions">
-                        <a href="profile_url">Profile</a>
-                        <a href="message_url">Message</a>
-                    </div>
-                </div>
-            </div>
-                                                                                                            
-            <!-- Repeat the person-card block for more entries -->
+            
         </div>
-    </div>
-
+    
     <script src="../javascript/main.js"></script>
 </body>
 </html>
-
-
-

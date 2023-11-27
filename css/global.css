@@ -1,0 +1,61 @@
+/* Global styles */
+
+/* Style for the vertical navbar */
+.navbar {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    overflow: auto;
+}
+
+.navbar button {
+    display: block;
+    background-color: #333;
+    color: white;
+    padding: 16px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    border: none;
+    border-bottom: 1px solid #555;
+    width: 100%;
+    text-align: left;
+}
+
+.navbar button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Main content styling */
+.main-content {
+    margin-left: 200px; /* Same as navbar width */
+    padding: 20px;
+}
+
+/* ... (existing global styles) ... */
+
+.logo-container {
+    position: fixed;
+    top: 10px; /* Adjust as necessary */
+    right: 10px; /* Adjust as necessary */
+    display: flex;
+    align-items: center;
+    z-index: 1001; /* Ensure it's above other content */
+}
+
+.logo {
+    height: 50px; /* Adjust as necessary */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Spacing between logo and text */
+}
+
+.logo-text {
+    font-size: 1.5rem; /* Adjust as necessary */
+    color: #333; /* Adjust as necessary */
+    font-weight: bold; /* Optional, for bold text */
+}
+
+/* ... (rest of your global styles) ... */
